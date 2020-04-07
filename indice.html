@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Plataformas web</title>
+    <script type="text/javascript" src="funcion.js"></script>
 </head>
 <body>
+    <!--<input type="text" size="30" maxlength="30" value="Ingrese el nombre de la pelicula" id="cajaText">
+    <div id="raiz"></div>
+    <script src="funcion.js"></script>
+    -->
     
+    <input type="text" size="30" maxlength="30" placeholder="Ingrese el nombre de la pelicula" id="cajaText">
+    <input type="button" value="Buscar" onclick="apiCall()"><br</br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Anio</th>
+                <th>Tipo</th>
+                <th>Poster</th>
+            </tr>
+        </thead>
+        
+        <tbody id="informacion["></tbody>
+
+    </table>
+
+    <div id="respuesta"></div>
 </body>
 </html>
+
