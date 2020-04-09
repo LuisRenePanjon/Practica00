@@ -52,24 +52,24 @@ function buscarPeliculaPorId(Objeto){
             var data = JSON.parse(this.responseText);
             for(var i in data){
                 if(data.hasOwnProperty(i)){
-                    plot += "<table>" +
-                                //"<thead>" +
+                    if(`${i}`=="Poster"){
+                        plot +="";
+                    }else{
+                        plot += "<table class='info'>" +
                                     "<tr>" +
+                                        "<thead>"+
                                         "<th>"+ `${i}` +"</th>"+
+                                        "</thead>"+
                                         "<td>"+`${data[i]}` + "</td>" +
-                                //"</thead>" +
-                                //"<tbody>" +
-                                    //"<tr>" + 
-                                  //      "<td>"+`${data[i]}` + "</td>" +
-                                    //"</tr>"+
-                                //"</tbody>"+
-                            "</table>";
+                                    "</tr>"+
+                                "</table>";
 
                     //cuerpo +=   "<tr>" + 
                       //          "<td>"+`${data[i]}` + "</td>" +
                         //        "</tr>";
                     
                     //plot += data[i];
+                    }   
                 }
                                 
             };
