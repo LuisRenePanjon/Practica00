@@ -31,6 +31,57 @@ function apiCall(){
         xmlhttp.open("GET","http://www.omdbapi.com/?apikey=adcd043d&s=" + titulo + "&plot=full", true);
         xmlhttp.send();
     }
+
+
+
+}
+
+
+
+function buscarPeliculaPorId(Objeto){
+    var plot="";
+    var cuerpo="";
+    if(window.XMLHttpRequest){
+        xmlhttp = new XMLHttpRequest();
+
+    }else{
+        xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            var data = JSON.parse(this.responseText);
+            for(var i in data){
+                if(data.hasOwnProperty(i)){
+                    plot += "<table>" +
+                                //"<thead>" +
+                                    "<tr>" +
+                                        "<th>"+ `${i}` +"</th>"+
+                                        "<td>"+`${data[i]}` + "</td>" +
+                                //"</thead>" +
+                                //"<tbody>" +
+                                    //"<tr>" + 
+                                  //      "<td>"+`${data[i]}` + "</td>" +
+                                    //"</tr>"+
+                                //"</tbody>"+
+                            "</table>";
+
+                    //cuerpo +=   "<tr>" + 
+                      //          "<td>"+`${data[i]}` + "</td>" +
+                        //        "</tr>";
+                    
+                    //plot += data[i];
+                }
+                                
+            };
+            //console.log(data["Year"]);
+            console.log(plot);
+            document.getElementById("respuesta").innerHTML= plot;
+            //document.getElementById("tcuerpo").innerHTML= cuerpo;
+        }
+        
+    };
+    xmlhttp.open("GET", "http://www.omdbapi.com/?apikey=adcd043d&i="+ Objeto+ "&plot=full",true);
+    xmlhttp.send();
 }
 
 
