@@ -1,0 +1,178 @@
+.body{
+    margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+    line-height: 1.5em;
+    
+    padding-top: 200px;
+}
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 80px;
+	
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+ 
+}	
+#main-header a {
+    
+	color: white;
+}
+
+.container{
+    text-align: center;
+}
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+.caja { 
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px;
+    margin-top: 75px; 
+    overflow: hidden; 
+    padding: 30px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;
+}
+
+.izq {
+    float: left;
+    background: white;
+    
+}
+
+.der {
+    float: right;
+    background-color: white;
+    overflow:scroll;
+    height:730px;
+    width:650px;
+}
+
+#main-container{
+    width: 600px;
+}
+
+table{
+    background-color: white;
+    text-align: right;
+    border-collapse: collapse;
+    width: 600px;
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    
+}
+
+th, td {
+    
+    padding: 25px;
+}
+
+.th{
+    width: 25px;
+    background-color: #246355;
+}
+
+.td {
+    width: 55px;
+}
+
+thead{
+    background-color: #889ccf;
+    border-bottom: solid 5px;
+    color: white;
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+
+} 
+
+
+
+
+
+
+
+
