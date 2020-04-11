@@ -201,8 +201,8 @@ tr:nth-child(even) {
 	background: #333;
 	color: white;
     text-align: center;
-	padding: 20px;
-    margin-top: 40px;
+	padding-top: 11px;
+    margin-top: 80px;
     position: fixed;
   bottom: 0;
   width: 100%;
