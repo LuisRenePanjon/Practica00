@@ -1,6 +1,6 @@
 var pagina=1;
-
-function apiCall(){
+function apiCall(pa){
+    
     
     var titulo=document.getElementById("cajaText").value;
     
@@ -28,8 +28,9 @@ function apiCall(){
                                 "</tr>" ;
                                 
                 });
-                detalles += "<input type='button' value='Anterior' onclick='paginas()' class='boton'>"+
-                            "<input type='button' value='Siguiente' onclick='paginas()' class='boton'>";
+                detalles += 
+                            "<td> <input type='button' value='Anterior' onclick='paginas2()' class='sig'> </td>" +
+                            "<td><input type='button' value='Siguiente' onclick='paginas()' class='atras'></td> ";
                             
                 document.getElementById("informacion").innerHTML = detalles;
             }
@@ -39,6 +40,7 @@ function apiCall(){
     }
 
 }
+
 
 function paginas(){
     pagina= pagina+1;
@@ -68,8 +70,9 @@ function paginas(){
                                 "</tr>" ;
                                 
                 });
-                detalles += "<input type='button' value='Anterior' onclick='paginas2()' class='boton'>"+
-                            "<input type='button' value='Siguiente' onclick='paginas()' class='boton'>";
+                detalles += 
+                            "<td> <input type='button' value='Anterior' onclick='paginas2()' class='sig'> </td>" +
+                            "<td><input type='button' value='Siguiente' onclick='paginas()' class='atras'></td> ";
                 
                 document.getElementById("informacion").innerHTML = detalles;
             }
@@ -107,8 +110,9 @@ function paginas2(){
                                 "</tr>" ;
                                 
                 });
-                detalles += "<input type='button' value='Anterior' onclick='paginas2()' class='boton'>"+
-                            "<input type='button' value='Siguiente' onclick='paginas()' class='boton'>";
+                detalles += 
+                            "<td> <input type='button' value='Anterior' onclick='paginas2()' class='sig'> </td>" +
+                            "<td><input type='button' value='Siguiente' onclick='paginas()' class='atras'></td> ";
                 
                 document.getElementById("informacion").innerHTML = detalles;
             }
