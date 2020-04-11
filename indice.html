@@ -4,19 +4,30 @@
 <head>
     <title>Practica Plataformas web</title>
     <script type="text/javascript" src="funcion.js"></script>
+    <script src="paginator.js"></script>
+    <link rel="stylesheet" href="jquery.dataTables.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+
     <link href="estilos.css" rel="stylesheet">
 </head>
 
 <body>
     <header id="main-header">
-		
-		<a id="logo-header" href="#">
-			<span class="site-name">BuscaPelis</span>
-			<span class="site-desc">Plataformas Web / Ingenieria en Ciencias de la Computacion</span>
-		</a> <!-- / #logo-header -->
 
-	</header>
-    <input type="text" size="30" maxlength="30" placeholder="Ingrese el nombre de la pelicula" id="cajaText" class="caja">
+        <a id="logo-header" href="#">
+            <span class="site-name">BuscaPelis</span>
+            <span class="site-desc">Plataformas Web / Ingenieria en Ciencias de la Computacion</span>
+        </a> <!-- / #logo-header -->
+
+    </header>
+    <input type="text" size="30" maxlength="30" placeholder="Ingrese el nombre de la pelicula" id="cajaText"
+        class="caja">
     <input type="button" value="Buscar" onclick="apiCall()" class="boton">
     <div class="container">
         <!--<input type="text" size="30" maxlength="30" value="Ingrese el nombre de la pelicula" id="cajaText">
@@ -27,7 +38,7 @@
 
         <br< /br>
             <div class="izq">
-                <table>
+                <table id="tableUser2" class="display">
                     <thead>
                         <tr>
                             <th></th>
@@ -46,9 +57,22 @@
 
     </div>
 
-    
 
+
+
+    <!--
+    <script>
+        $(document).ready( function () {
+            $('#tableUser2').DataTable();
+        } );
+    </script>
     
+    <footer id="main-footer">
+		<p>&copy; 2020 <a href="http://FranciscoAMK.com">Desarrollado por: Luis Rene Panjon</a></p>
+	</footer> <!-- / #main-footer -->
+
+
+
 </body>
 
 </html>
