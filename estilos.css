@@ -89,6 +89,31 @@ nav {
     border-radius: 6px;
     border: 2px solid #0016b0;
 }
+.sig{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    float:left;
+}
+
+.atras{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    float:left;
+}
+
+
 .caja { 
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     color: #ffffff; 
@@ -150,6 +175,10 @@ th, td {
 
 .td {
     width: 55px;
+}
+.linea
+{
+    display: inline-block;
 }
 
 thead{
