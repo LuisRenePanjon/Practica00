@@ -166,7 +166,7 @@ function buscarPeliculaPorId(Objeto){
         }
         
     };
-    xmlhttp.open("GET", "http://www.omdbapi.com/?apikey=adcd043d&i="+ Objeto+ "&plot=full",true);
+    xmlhttp.open("GET", "http://www.omdbapi.com/?apikey=[YOUR KEY]&i="+ Objeto+ "&plot=full",true);
     xmlhttp.send();
 }
 
